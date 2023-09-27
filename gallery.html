@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Universal Dream Dwellings</title>
+      <meta name="description" content="Universal Dream Dwellings">
+      <link rel="stylesheet" href="styles.css">
+
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <link rel="stylesheet" href="slick-master/slick/slick.css">
+      <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+      <script src="slick-master/slick/slick.js"></script>
+      <!-- Unite Gallery -->
+      <script type='text/javascript' src='unitegallery-master/dist/js/unitegallery.min.js'></script> 
+
+		<link rel='stylesheet' href='unitegallery-master/dist/css/unite-gallery.css' type='text/css' /> 
+		<script type='text/javascript' src='unitegallery-master/dist/themes/tiles/ug-theme-tiles.js'></script> 
+		<link rel='stylesheet' href='unitegallery-master/dist/themes/default/ug-theme-default.css' type='text/css' /> 
+
+      
+   </head>
+   <body>
+      <script src="interactivity.js"></script>
+      <!-- Desktop website navigation bar below -->
+      <nav>
+         <!-- Parent Element For Navigation Items -->
+         <ul class = "menu">
+            <li class="logo"><a href="index.html">UNIVERSAL DREAM DWELLINGS</a></li>
+            <li class="menuItem firstItem"><a href="index.html">Home</a></li>
+            <li class="menuItem"><a href="services.html">Services</a></li>
+            <li class="menuItem"><a href="gallery.html">Gallery</a></li>
+            <li class="menuItem lastItem"><a href="contact.html">Contact</a></li>
+            <!-- Span tag for hamburger menu -->
+            <li class ="toggleButton"><span class="hamburger"></span></li>
+         </ul>
+      </nav>
+      <main>
+         <br><br>
+         <h1 id="smallNavWelcome">Gallery</h1>
+         <br>
+		    
+         <div id="galleryContainer">
+            <div id="gallery" style="display:none;">
+               <img alt="" src="images/electrical.jpg"
+                  data-image="images/electrical.jpg"
+                  data-description="Image 1 Description">
+               
+               <img alt="" src="images/image1.jpeg"
+                  data-image="images/image1.jpeg"
+                  data-description="Image 2 Description">
+   
+               <img alt="" src="images/image2.jpeg"
+                  data-image="images/image2.jpeg"
+                  data-description="Image 2 Description">
+               
+               <img alt="" src="images/image3.1.jpg"
+                  data-image="images/image3.1.jpg"
+                  data-description="Image 2 Description">
+               
+               <img alt="" src="images/plumbing2.jpeg"
+                  data-image="images/plumbing2.jpeg"
+                  data-description="Image 2 Description">
+            </div>
+         </div>
+
+       
+      
+            
+
+
+
+         <br><br>
+
+         <script type="text/javascript"> 
+			
+            jQuery(document).ready(function(){ 
+               jQuery("#gallery").unitegallery(); 
+               $("#gal")
+            }); 
+         
+         </script>
+		
+      </main>
+      <!-- footer of the pages -->
+      <footer>
+         <section class="footerFlexContainer">
+            <div class="about">
+               <h4>About</h4>
+               <p>Our commercial projects include both new construction and
+                  repairs/restorations. Occupied and fully operational job 
+                  sites are never a problem. And we can also plan, manage,
+                  and build multi-phase jobs.
+               </p>
+            </div>
+
+            <div class="contact">
+               <h4>Contact head department.</h4>
+               <ul>
+                  <li>Address:Lost City, Somewhere Street, No.13</li>
+                  <li>Phone:407 8353 8484.</li>
+                  <li>Email: notmyemail@mail.ca.oc.</li>
+               </ul>
+            </div>
+         </section>
+         <section class="postFooter"><i>Last Update: 20/08/2022</i></section>
+         <section class="postFooter2">Copyright &copy; Universal Dream Dwellings 2022</section>
+      </footer>
+   </body>
+</html>

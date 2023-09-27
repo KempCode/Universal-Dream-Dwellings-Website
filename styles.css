@@ -1,0 +1,306 @@
+* {
+	/*Box model changed - padding
+    and margins to the edges of pages*/
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+#galleryContainer{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#smallNavWelcome {
+	margin-top: min(100px);
+	margin-bottom: min(25px);
+}
+
+
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#welcome {
+	margin-top: min(200px);
+}
+
+
+
+#Buildimage {
+	max-width:100%;
+	height: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#ElecImage {
+	max-width:100%;
+	height:auto;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+#PlumImage{
+	max-width:100%;
+	height: auto;
+	margin-bottom: 20px;
+	margin-top: 20px
+}
+.logo a {
+	/*Website logo slightly larger than the rest*/
+	
+}
+
+nav {
+	background-color: #0D0D0D;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	opacity: 1;
+	padding: 0px 40px;
+}
+
+.menu {
+	/*Remove bullet points*/
+	list-style-type: none;
+}
+
+.menu li {
+	font-size: 16px;
+	padding: 15px 5px;
+}
+
+.menu li a {
+	color: white;
+	/*Remove underline*/
+	text-decoration: none;
+}
+
+.menuItem {
+	/*Make whole list item clickable*/
+	display: block;
+	padding: 5% !important;
+}
+
+.menuItem:hover {
+	text-decoration: underline;
+}
+
+
+/*Mobile Navigation Menu*/
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	/*Main axis:*/
+	justify-content: space-between;
+	/*align items and flexbox - cross axis:*/
+	align-items: center;
+}
+
+.toggleButton {
+	/*Toggle button for mobile menu*/
+	cursor: pointer;
+	order: 1;
+	padding-bottom: 20px !important;
+}
+
+.menuItem {
+	width: 100%;
+	text-align: center;
+	order: 3;
+	display: none;
+	/*hides menu until js animate open*/
+}
+
+.menuItem.active {
+	display: block;
+}
+
+
+/*HAMBURGER BAR GRAPHICS*/
+.hamburger {
+	/*The span inside of toggle*/
+	background: rgb(218, 218, 218);
+	display: flex;
+	/*displayed like inline element
+     but with height and width values*/
+	position: relative;
+	height: 2px;
+	width: 18px;
+}
+
+.hamburger::before,
+.hamburger::after {
+	/*Pseudo elements insert before and 
+    after content of span toggle*/
+	content: "";
+	background: rgb(218, 218, 218);
+	display: inline-block;
+	/*displayed like inline element
+      but with height and width values*/
+	position: absolute;
+	height: 2px;
+	width: 18px;
+}
+
+.hamburger::before {
+	top: 5px;
+}
+
+.hamburger::after {
+	top: -5px;
+}
+
+
+/*Desktop screen size menu*/
+@media all and (min-width:968px) {
+	.menuItem {
+		/*Make hyperlinks visible for desktop menu*/
+		display: block;
+		/*Make the width of their content*/
+		width: auto;
+		/*Set padding back to normal*/
+		padding: 15px 5px !important;
+	}
+
+	.toggleButton {
+		/*Hide haamburger menu for desktop*/
+		display: inline-block;
+		display: none;
+	}
+
+	nav {
+		opacity: 0.95;
+	}
+
+	.firstItem {
+		margin-left: 7.5%;
+	}
+
+	.lastItem {
+		margin-right: 1.5%;
+	}
+
+	.menu li {
+		padding: 15px 10px;
+	}
+}
+
+
+/*Scale logo based on screen size*/
+
+@media all and (max-width:500px) {
+	.logo a {
+		font-size: 15px;
+	}
+}
+
+
+@media all and (max-width:350px) {
+	.logo a {
+		font-size: 10px;
+	}
+}
+
+@media all and (max-width:300px) {
+	.logo a {
+		font-size: 7px;
+	}
+}
+
+@media all and (max-width:240px) {
+	.logo a {
+		font-size: 0px;
+	}
+}
+
+
+/*Main logo of the honepage*/
+@media all and (max-width:500px) {
+	.logo:has(img){
+		width:50%;
+	}
+}
+
+/*Footer of the page*/
+footer {
+	background-color: #FFEBB7;
+	color: black;
+}
+
+.footerFlexContainer {
+	display: flex;
+}
+
+.footerFlexContainer>div {
+	flex-grow: 1;
+	flex-basis: 100%;
+	/*Divide sections equally*/
+	text-align: center;
+	padding: 4%;
+}
+
+.postFooter2 {
+	padding-bottom: 2.5%;
+}
+
+.about>h4,
+.services>h4,
+.contact>h4,
+.postFooter {
+	margin-bottom: 10px;
+}
+
+.contact>ul,
+.services>ul {
+	list-style-type: none;
+	/*Removes the bullet points*/
+	line-height: 1.6;
+}
+
+@media only screen and (max-width:768px) {
+
+	/*Flexbox footer into columns for mobile devices*/
+	.footerFlexContainer {
+		flex-direction: column;
+	}
+
+}
+
+/*Footer CSS Finished*/
+
+
+/*Slick carousel css*/
+.single-item div img {
+	z-index: 9999;
+	width: 100%;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
+.single-item {
+	height: 450px;
+}
+
+.single-item img {
+	height: 450px;
+}
+
+
+@media(max-width:800px) {
+	.single-item img {
+		height: 250px;
+	}
+
+	.single-item {
+		height: 250px;
+	}
+}
+/*Slick carousel css Finished*/
